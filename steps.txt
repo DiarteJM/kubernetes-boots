@@ -1,0 +1,9 @@
+Steps to start up MiniKube:
+
+1. Run command: `minikube start --extra-config "apiserver.cors-allowed-origins=["http://boot.dev"]"`
+2. Run command: `minikube dashboard --port=63840"
+3. To create a deployment: `kubectl create deployment synergychat-web --image=docker.io/bootdotdev/synergychat-web:latest`
+4. Run command: `kubectl get deployments`
+5. Run command: `kubectl get pods`
+6. Run command: `kubectl port-forward PODNAME 8080:8080`
+7. Edit deployment: `kubectl edit deployment synergychat-web`
